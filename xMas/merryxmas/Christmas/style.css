@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: firebrick;
+}
+
+.card-bg {
+    background-image: url("https://media0.giphy.com/media/tIHktzgRi8yjIplFVI/giphy.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.card {
+    position: relative;
+    height: 300px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card img {
+    position: absolute;
+    width: 300px;
+    height: 80%;
+    filter: drop-shadow(0 0 20px rgba(26, 0, 68, 0.34));
+    bottom: 0;
+    left: 150px;
+    transition: 0.5s;
+}
+
+.text-container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+    width: 300px;
+    right: -300px;
+    transition: 0.5s;
+    top: 25px;
+}
+
+h1 {
+    color: yellow;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: 'Shrikhand', cursive;
+}
+
+h2 {
+    color: black;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: inherit;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    font-family: 'Dancing Script', cursive;
+}
+
+h3 {
+    color: black;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: inherit;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.card:hover img {
+    width: 250px;
+    left: 15px;
+    bottom: 5px;
+}
+
+.card:hover .text-container {
+    right: 15px;
+}
